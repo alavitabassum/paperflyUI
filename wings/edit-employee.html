@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Employee Records | Wings v2.0</title>
+
+    <!-- Added tags-->
+    <meta property="og:url" content="http://alavi-works.printf.com.bd/wings/" />
+    <meta property="og:type" content="Order Fulfilment Service" />
+    <meta property="og:title" content="Wings v0.2" />
+    <meta property="og:description" content="Order Fulfilment Service | PaperFly Private Limited" />
+    <meta property="og:image" content="http://alavi-works.printf.com.bd/PFLogoFull.png" />
+    <!--favicon-->
+    <link rel="icon" type="image/png" href="img/wings_favicon.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="img/wings_favicon.png" sizes="32x32">
+
+    <!-- for IE -->
+    <link rel="icon" type="image/x-icon" href="img/wings_favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="img/wings_favicon.ico" />
+    <link rel="shortcut icon" href="img/wings_favicon.ico">
+
+    <meta name="description" content="Paperfly Private Limited" />
+    <meta name="keywords" content="PaperFly, Wings, PaperFly Private Limited, Order tracker" />
+
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <!-- Datatables -->
+    <link href="../vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
+    <!-- Dropzone.js -->
+    <link href="../vendors/dropzone/dist/min/dropzone.min.css" rel="stylesheet">
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.css" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="css/timeline-style.css">
+    <!-- timeline css -->
+
+
+</head>
+
+<body class="nav-md">
+    <div class="container body">
+        <div class="main_container">
+            <div class="col-md-3 left_col">
+                <div class="left_col scroll-view">
+                    <div class="navbar nav_title" style="border: 0;">
+                        <a href="index.html" class="site_title">
+                            <i>
+                                <img src="images/logo.png"> </i>
+                            <img class="full_logo" src="images/Wings.jpg" />
+                        </a>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <!-- menu profile quick info -->
+                    <div class="profile clearfix">
+                        <div class="profile_pic">
+                            <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+                        </div>
+                        <div class="profile_info">
+                            <span>Welcome,</span>
+                            <h2>Shahriar Hasan</h2>
+                        </div>
+                    </div>
+                    <!-- /menu profile quick info -->
+
+                    <br />
+
+                    <!-- sidebar menu -->
+                    <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                        <div class="menu_section">
+                            <ul class="nav side-menu">
+                                <li class="menu-banner">
+                                     <i></i> Order Management</li>
+                                <li>
+                                    <a>
+                                        <i class="fa fa-edit"></i>Assign Orders
+                                        <span class="fa fa-chevron-down"></span>
+                                    </a>
+                                    <ul class="nav child_menu">
+                                        <li>
+                                            <a href="#">Assign One By One</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Batch Pick Up Assignment</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Batch Delivery Assignment</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a>
+                                        <i class="fa fa-th"></i>Order History
+                                        <span class="fa fa-chevron-down"></span>
+                                    </a>
+                                    <ul class="nav child_menu">
+                                        <li>
+                                            <a href="orders.html">Order Records</a>
+                                        </li>
+                                        <li>
+                                            <a href="orders.html">Return Orders</a>
+                                        </li>
+                                        <li>
+                                            <a href="orders.html">Exchange Orders</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Banking Details</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a>
+                                        <i class="fa fa-th-list"></i> Pick Up Details
+                                        <span class="fa fa-chevron-down"></span>
+                                    </a>
+                                    <ul class="nav child_menu">
+                                        <li>
+                                            <a href="#">Track Pick Ups</a>
+                                            <!-- add date filter-->
+                                        </li>
+                                        <li>
+                                            <a href="#">Pick Ups Per Executive</a>
+                                            <!-- add date filter-->
+                                        </li>
+                                        <li>
+                                            <a href="#">Pick Ups Per Merchant</a>
+                                            <!-- add date filter-->
+                                        </li>
+                                        <li>
+                                            <a href="#">Pick Ups Per Location</a>
+                                            <!-- add date filter-->
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a>
+                                        <i class="fa fa-cube"></i>Delivery Details
+                                        <span class="fa fa-chevron-down"></span>
+                                    </a>
+                                    <ul class="nav child_menu">
+                                        <li>
+                                            <a href="#">Track Deliveries</a>
+                                            <!-- add date filter-->
+                                        </li>
+                                        <li>
+                                            <a href="#">Deliveries Per Executive</a>
+                                            <!-- add date filter-->
+                                        </li>
+                                        <li>
+                                            <a href="#">Deliveries Per Location</a>
+                                            <!-- add date filter-->
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="menu-banner">
+                                     <i></i> Data Management</li>
+                                <li>
+                                    <a>
+                                        <i class="fa fa-group"></i>Merchants
+                                        <span class="fa fa-chevron-down"></span>
+                                    </a>
+                                    <ul class="nav child_menu">
+                                        <li>
+                                            <a href="new-merchant.html">New Registration</a>
+                                            <!-- add date filter-->
+                                        </li>
+                                        <li>
+                                            <a href="edit-merchant.html">Edit Existing</a>
+                                            <!-- add date filter-->
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a>
+                                        <i class="fa fa-map-marker"></i>Districts
+                                        <span class="fa fa-chevron-down"></span>
+                                    </a>
+                                    <ul class="nav child_menu">
+                                        <li>
+                                            <a href="districts.html">Districts List</a>
+                                            <!-- add date filter-->
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a>
+                                        <i class="fa fa-map-marker"></i>Thanas
+                                        <span class="fa fa-chevron-down"></span>
+                                    </a>
+                                    <ul class="nav child_menu">
+                                        <li>
+                                            <a href="thanas.html">Thanas List</a>
+                                            <!-- add date filter-->
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a>
+                                        <i class="fa fa-location-arrow"></i>Points
+                                        <span class="fa fa-chevron-down"></span>
+                                    </a>
+                                    <ul class="nav child_menu">
+                                        <li>
+                                            <a href="points.html">Points List</a>
+                                            <!-- add date filter-->
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a>
+                                        <i class="fa fa-male"></i>Employee
+                                        <span class="fa fa-chevron-down"></span>
+                                    </a>
+                                    <ul class="nav child_menu">
+                                        <li>
+                                            <a href="new-employee.html">New Registration</a>
+                                            <!-- add date filter-->
+                                        </li>
+                                        <li>
+                                            <a href="edit-employee.html">Edit Existing</a>
+                                            <!-- add date filter-->
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a>
+                                        <i class="fa fa-suitcase"></i>Designation
+                                        <span class="fa fa-chevron-down"></span>
+                                    </a>
+                                    <ul class="nav child_menu">
+                                        <li>
+                                           <a href="designations.html">Designations List</a>
+                                            <!-- add date filter-->
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a>
+                                        <i class="fa fa-file-text"></i>Reports
+                                        <span class="fa fa-chevron-down"></span>
+                                    </a>
+                                    <ul class="nav child_menu">
+                                        <li>
+                                            <a href="#">Orders</a>
+                                            <!--use vertical tabs fro sectionings-->
+                                        </li>
+                                        <li>
+                                            <a href="#">Invoices</a>
+                                            <!-- use vertical tabs fro sectionings-->
+                                        </li>
+                                        <li>
+                                            <a href="#">Shuttles</a>
+                                            <!--use vertical tabs fro sectionings-->
+                                        </li>
+                                        <li>
+                                            <a href="#S">Points and Executives</a>
+                                            <!--use vertical tabs fro sectionings-->
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <!-- /sidebar menu -->
+
+                    <div class="sidebar-footer hidden-small">
+                        <a data-toggle="tooltip" data-placement="top" title="Settings">
+                            <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                            <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="Lock">
+                            <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+                            <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- top navigation -->
+            <div class="top_nav">
+                <div class="nav_menu">
+                    <nav>
+                        <div class="nav toggle">
+                            <a id="menu_toggle">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                        </div>
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="">
+                                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                    <img src="images/img.jpg" alt="">Shahriar Hasan
+                                    <span class=" fa fa-angle-down"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                    <li>
+                                        <a href="javascript:;"> Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">
+                                            <span class="badge bg-red pull-right"></span>
+                                            <span>Settings</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">Help</a>
+                                    </li>
+                                    <li>
+                                        <a href="login.html">
+                                            <i class="fa fa-sign-out pull-right"></i> Log Out</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- /top navigation -->
+
+            <!-- page content -->
+            <div class="right_col" role="main">
+                <div class="">
+                    <div class="clearfix"></div>
+                    <div class="row">
+
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="employee-list-table">
+                                <div class="x_panel employee-list-table">
+                                    <div class="x_title">
+                                        <h2>Employee Information</h2>
+
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="x_content">
+
+                                        <!--Modal for viewing record-->
+
+                                        <div class="modal fade bs-example-modal-lg view-record-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg">
+                                                <div class="modal-content">
+
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                        <h4 class="modal-title" id="myModalLabel">Employee Record</h4>
+                                                    </div>
+                                                    <div class="modal-body">
+
+                                                        <div class="row">
+
+                                                            <div class="clearfix"></div>
+
+
+                                                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                                                <div class="x_panel">
+                                                                    <div class="x_title">
+                                                                        <h2>Employee Details</h2>
+
+                                                                        <div class="clearfix"></div>
+                                                                    </div>
+                                                                    <div class="x_content">
+                                                                        <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-4  col-sm-offset-3">
+
+                                                                            <img src="images/img-placeholder.jpg" alt="img-placeholder" class="img-thumbnail">
+                                                                        </div>
+                                                                        <table class="table table-striped">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th></th>
+                                                                                    <th></th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <th>Employee Code</th>
+                                                                                    <td>xxxx</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>Employee Name</th>
+                                                                                    <td>xxxx</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>Contact Number</th>
+                                                                                    <td>xxx</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>Email</th>
+                                                                                    <td>xxx</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>Confirm Email</th>
+                                                                                    <td></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>Address</th>
+                                                                                    <td></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>District</th>
+                                                                                    <td></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>Thana</th>
+                                                                                    <td></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>Date of Joining</th>
+                                                                                    <td></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>HR Band</th>
+                                                                                    <td></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>Basic Salary</th>
+                                                                                    <td></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>House Rent</th>
+                                                                                    <td></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>Transport Allowance</th>
+                                                                                    <td></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>Quarterly Incentive(%)</th>
+                                                                                    <td></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>Festival Bonus(%)</th>
+                                                                                    <td></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>TIN Number</th>
+                                                                                    <td></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>Date of Birth</th>
+                                                                                    <td></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>Marital Status</th>
+                                                                                    <td></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>Blood Group</th>
+                                                                                    <td></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>Gender</th>
+                                                                                    <td></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>Father/Spouse Name</th>
+                                                                                    <td></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>NID</th>
+                                                                                    <td></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>Religion</th>
+                                                                                    <td></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                                <div class="x_panel">
+                                                                    <div class="x_title">
+                                                                        <h2>Bank Information</h2>
+
+                                                                        <div class="clearfix"></div>
+                                                                    </div>
+                                                                    <div class="x_content">
+
+                                                                        <table class="table table-striped">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th></th>
+                                                                                    <th></th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <th>Bank Name</th>
+                                                                                    <td></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>Account Name</th>
+                                                                                    <td></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>Account Number</th>
+                                                                                    <td></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+                                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                                <div class="x_panel">
+                                                                    <div class="x_title">
+                                                                        <h2>Emergency Contact</h2>
+
+                                                                        <div class="clearfix"></div>
+                                                                    </div>
+                                                                    <div class="x_content">
+
+                                                                        <table class="table table-striped">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th></th>
+                                                                                    <th></th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <th>Contact Person Name</th>
+                                                                                    <td></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>Contact Number</th>
+                                                                                    <td></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th>Relationship</th>
+                                                                                    <td></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="clearfix"></div>
+                                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                                <div class="x_panel">
+                                                                    <div class="x_title">
+                                                                        <h2>Points Assigned</h2>
+
+                                                                        <div class="clearfix"></div>
+                                                                    </div>
+                                                                    <div class="x_content">
+
+                                                                        <table class="table table-striped">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th></th>
+                                                                                    <th></th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <th>Points Codes</th>
+                                                                                    <td></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="clearfix"></div>
+
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--/ Modal for viewing record-->
+
+                                        <div class="table-responsive">
+                                            <table id="order-table" class="table table-striped jambo_table bulk_action">
+                                                <thead>
+                                                    <tr class="headings">
+                                                        <th>
+                                                            <input type="checkbox" id="check-all" class="flat">
+                                                        </th>
+                                                        <th class="column-title">Employee Code</th>
+                                                        <th class="column-title">Employee Name</th>
+                                                        <th class="column-title">Contact Number</th>
+                                                        <th class="column-title">View</th>
+                                                        <th class="column-title">Edit</th>
+                                                        <th class="column-title no-link last">
+                                                            <span class="nobr">Delete</span>
+                                                        </th>
+                                                        <th class="bulk-actions" colspan="11">
+                                                            <li role="presentation" class="dropdown" style="list-style: none;">
+                                                                <a id="drop4" class="antoo dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false"
+                                                                    style="columns: #000000; font-weight:700; color: #000000;">Bulk Actions (
+                                                                    <span class="action-cnt"> </span> )
+                                                                    <i class="fa fa-chevron-down"></i>
+                                                                </a>
+                                                                <ul id="menu6" class="dropdown-menu animated fadeInDown" role="menu">
+                                                                    <li role="presentation">
+                                                                        <a role="menuitem" tabindex="-1" data-toggle="modal" href="#alertmodal">Delete Selected</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+
+
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+
+
+                                                <tbody class="tracker_tbody">
+                                                    <tr class="even pointer">
+                                                        <td class="a-center ">
+                                                            <input type="checkbox" class="flat" name="table_records">
+                                                        </td>
+                                                        <td class=" ">E0001</td>
+                                                        <td class=" ">Shahriar Hasan</td>
+                                                        <td class=" "> +8801729242726</td>
+                                                        <td class="a-right a-right ">
+                                                            <button type="button" class="btn btn-demo empView-btn" data-toggle="modal" data-target=".view-record-modal">
+                                                                View
+                                                            </button>
+                                                        </td>
+                                                        <td class="a-right a-right ">
+                                                            <button type="button" class="btn btn-demo employee-edit">
+                                                                Edit
+                                                            </button>
+                                                        </td>
+                                                        <td class="a-right a-right ">
+                                                            <button type="button" class="btn btn-demo dlt-btn" data-toggle="modal" data-target=".alert-modal">
+                                                                Delete
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                            <!-- Alert modal-->
+                                            <div class="modal fade bs-example-modal-sm alert-modal" tabindex="-1" role="dialog" aria-hidden="true" id="alertmodal">
+                                                <div class="modal-dialog modal-sm">
+                                                    <div class="modal-content">
+
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">×</span>
+                                                            </button>
+                                                            <h4 class="modal-title" id="myModalLabel2">Alert!</h4>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <p>Are you sure you want to delete the selected records?</p>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="dltInfo();">Yes</button>
+                                                            <button type="button" class="btn btn-default" data-dismiss="modal" onclick="cnclInfo();">Cancel</button>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/Alert modal-->
+                                        </div>
+
+                                    </div>
+                                    <!--Pop Up Msg-->
+
+                                    <div class="x_content bs-example-popovers">
+
+                                        <div class="alert alert-success alert-dismissible fade in" role="alert" id="dltMsg">
+                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                <span aria-hidden="true">×</span>
+                                            </button>Deleted selected records.</div>
+
+                                        <div class="alert alert-info alert-dismissible fade in" role="alert" id="cnclMsg">
+                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                <span aria-hidden="true">×</span>
+                                            </button>You have made no changes.</div>
+                                    </div>
+
+                                    <!--/ Pop Up Msg-->
+                                </div>
+                            </div>
+
+                            <div class="editEmployee">
+
+                                <div class="x_panel">
+                                    <div class="x_title">
+                                        <h2>Employee Information
+                                            <small>(Edit)</small>
+                                        </h2>
+
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="x_content">
+                                        <div>
+                                            <form class="form-horizontal form-label-left">
+                                                <div class="item form-group">
+                                                    <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3  col-sm-offset-3">
+
+                                                        <img src="images/img-placeholder.jpg" alt="img-placeholder" class="img-thumbnail">
+                                                    </div>
+
+                                                </div>
+                                                <div class="item form-group">
+                                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="emp-name">Employee Name
+                                                        <span class="required">*</span>
+                                                    </label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <input type="text" id="emp-name" required="required" class="form-control col-md-7 col-xs-12">
+                                                    </div>
+                                                </div>
+                                                <div class="item form-group">
+                                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="designation">Designation
+                                                        <span class="required">*</span>
+                                                    </label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <input type="text" id="designation" required="required" class="form-control col-md-7 col-xs-12">
+                                                    </div>
+                                                </div>
+                                                <div class=" item form-group">
+                                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">Contact Number
+                                                        <span class="required">*</span>
+                                                    </label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <input type="text" class="form-control" required="required" data-inputmask="'mask' : '(999) 999-99999'">
+                                                    </div>
+                                                </div>
+                                                <div class="item form-group">
+                                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="email">Email
+                                                        <span class="required">*</span>
+                                                    </label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <input type="email" id="email" name="email" required="required" class="form-control col-md-7 col-xs-12">
+                                                    </div>
+                                                </div>
+                                                <div class="item form-group">
+                                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="email">Confirm Email
+                                                        <span class="required">*</span>
+                                                    </label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <input type="email" id="email2" name="confirm_email" data-validate-linked="email" required="required" class="form-control col-md-7 col-xs-12">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="address">Address
+                                                        <span class="required">*</span>
+                                                    </label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <input type="text" id="address" name="address" class="form-control col-md-7 col-xs-12">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">District
+                                                    </label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <select class="form-control" required="required">
+                                                            <option></option>
+                                                            <option value="1">Dhaka</option>
+                                                            <option value="2">Lakshmipur</option>
+                                                            <option value="3">Lalmonirhat</option>
+                                                            <option value="4">Madaripur</option>
+                                                            <option value="5">Magura</option>
+                                                            <option value="6">Manikganj</option>
+                                                            <option value="7">Meherpur</option>
+                                                            <option value="8">Moulvibazar</option>
+                                                            <option value="9">Munshiganj</option>
+                                                            <option value="10">Mymensingh</option>
+                                                            <option value="11">Naogaon</option>
+                                                            <option value="12">Narail</option>
+                                                            <option value="13">Narayanganj</option>
+                                                            <option value="14">Narsingdi</option>
+                                                            <option value="15">Natore</option>
+                                                            <option value="17">Netrakona</option>
+                                                            <option value="18">Nilphamari</option>
+                                                            <option value="19">Noakhali</option>
+                                                            <option value="20">Pabna</option>
+                                                            <option value="21">Panchagarh</option>
+                                                            <option value="23">Patuakhali</option>
+                                                            <option value="24">Pirojpur</option>
+                                                            <option value="25">Rajbari</option>
+                                                            <option value="26">Rajshahi</option>
+                                                            <option value="27">Rangpur</option>
+                                                            <option value="28">Satkhira</option>
+                                                            <option value="29">Shariatpur</option>
+                                                            <option value="30">Sherpur</option>
+                                                            <option value="31">Sirajganj</option>
+                                                            <option value="32">Sunamganj</option>
+                                                            <option value="33">Sylhet</option>
+                                                            <option value="34">Tangail</option>
+                                                            <option value="35">Thakurgaon</option>
+                                                            <option value="47">Bagerhat</option>
+                                                            <option value="48">Bandarban</option>
+                                                            <option value="49">Barguna</option>
+                                                            <option value="50">Barisal</option>
+                                                            <option value="51">Bhola</option>
+                                                            <option value="52">Bogra</option>
+                                                            <option value="53">Brahmanbaria</option>
+                                                            <option value="54">Chandpur</option>
+                                                            <option value="55">Chittagong</option>
+                                                            <option value="56">Chuadanga</option>
+                                                            <option value="57">Comilla</option>
+                                                            <option value="58">Coxs Bazar</option>
+                                                            <option value="59">Dinajpur</option>
+                                                            <option value="60">Faridpur</option>
+                                                            <option value="61">Feni</option>
+                                                            <option value="62">Gaibandha</option>
+                                                            <option value="63">Gazipur</option>
+                                                            <option value="64">Gopalganj</option>
+                                                            <option value="65">Habiganj</option>
+                                                            <option value="66">Jaipurhat</option>
+                                                            <option value="67">Jamalpur</option>
+                                                            <option value="68">Jessore</option>
+                                                            <option value="69">Jhalakati</option>
+                                                            <option value="70">Jhenaidah</option>
+                                                            <option value="71">Khagrachari</option>
+                                                            <option value="72">Khulna</option>
+                                                            <option value="73">Kishoreganj</option>
+                                                            <option value="74">Kurigram</option>
+                                                            <option value="75">Kushtia</option>
+                                                            <option value="76">Savar</option>
+                                                            <option value="78">Keraniganj</option>
+                                                            <option value="79">Rangamati</option>
+                                                            <option value="80">Chapainawabganj</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+
+
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">Thana
+                                                    </label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <select class="form-control" required="required">
+                                                            <option></option>
+                                                            <option value="1">Adabor </option>
+                                                            <option value="2">Badda</option>
+                                                            <option value="3">Banani</option>
+                                                            <option value="4">Bangshal</option>
+                                                            <option value="5">Bimanbandar</option>
+                                                            <option value="6">Cantonment</option>
+                                                            <option value="7">Chalkbazar</option>
+                                                            <option value="8">Dakshin Khan</option>
+                                                            <option value="9">Darus-Salam</option>
+                                                            <option value="10">Demra</option>
+                                                            <option value="11">Dhanmondi</option>
+                                                            <option value="12">Gandaria</option>
+                                                            <option value="13">Gulshan</option>
+                                                            <option value="14">Hajaribag</option>
+                                                            <option value="15">Jatrabari</option>
+                                                            <option value="16">Kafrul</option>
+                                                            <option value="17">Kalabagan</option>
+                                                            <option value="18">Kamrangirchar</option>
+                                                            <option value="19">Khilgaon</option>
+                                                            <option value="20">Khilkhet</option>
+                                                            <option value="21">Kodomtali</option>
+                                                            <option value="22">Kotwali</option>
+                                                            <option value="23">Lalbagh</option>
+                                                            <option value="24">Mirpur</option>
+                                                            <option value="25">Mohammadpur</option>
+                                                            <option value="26">Motijheel</option>
+                                                            <option value="27">Mugda</option>
+                                                            <option value="28">New Market</option>
+                                                            <option value="29">Pallabi</option>
+                                                            <option value="30">Paltan</option>
+                                                            <option value="31">Ramna</option>
+                                                            <option value="32">Rampura</option>
+                                                            <option value="33">Rupnagar</option>
+                                                            <option value="34">Sabujbag</option>
+                                                            <option value="35">Shah Ali</option>
+                                                            <option value="36">Shahbag</option>
+                                                            <option value="37">Shahjahanpur</option>
+                                                            <option value="38">Shampur</option>
+                                                            <option value="39">Sher-e-Bangla Nagar</option>
+                                                            <option value="40">Sutrapur</option>
+                                                            <option value="41">Tejgaon</option>
+                                                            <option value="42">Tejgaon Shilpanchal</option>
+                                                            <option value="43">Turag</option>
+                                                            <option value="44">Uttara</option>
+                                                            <option value="45">Uttara West</option>
+                                                            <option value="46">UttarKhan</option>
+                                                            <option value="47">Vasantek</option>
+                                                            <option value="48">Vatara</option>
+                                                            <option value="49">Wari</option>
+                                                            <option value="139">Narsingdi</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">Date of Joining</label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <input type="text" class="form-control" data-inputmask="'mask': '99/99/9999'">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="website" class="control-label col-md-3 col-sm-3 col-xs-12">HR Band</label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <input id="hrBand" class="form-control col-md-7 col-xs-12" type="text" name="HR Band">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="emp-salary" class="control-label col-md-3 col-sm-3 col-xs-12">Basic Salary</label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <input id="emp-salary" class="form-control col-md-7 col-xs-12" type="text" name="emp-salary">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="house-rent" class="control-label col-md-3 col-sm-3 col-xs-12">House Rent</label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <input id="house-rent" class="form-control col-md-7 col-xs-12" type="text" name="house-rent">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="allowance" class="control-label col-md-3 col-sm-3 col-xs-12">Transport Allowance</label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <input id="allowance" class="form-control col-md-7 col-xs-12" type="text" name="allowance">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="incentive" class="control-label col-md-3 col-sm-3 col-xs-12">Quarterly Incentive(%)</label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <input id="incentive" class="form-control col-md-7 col-xs-12" type="text" name="incentive">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="fest-bonus" class="control-label col-md-3 col-sm-3 col-xs-12">Festival Bonus(%)</label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <input id="fest-bonus" class="form-control col-md-7 col-xs-12" type="text" name="fest-bonus">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">TIN Number</label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <input type="text" class="form-control" data-inputmask="'mask' : '*******************'">
+                                                    </div>
+                                                </div>
+                                                <div class="divider-dashed"></div>
+                                                <div class="title_left">
+                                                    <h3>General Information</h3>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">Date of Birth</label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <input type="text" class="form-control" data-inputmask="'mask': '99/99/9999'">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">Marital Status
+                                                    </label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <select id="rateChart" name="marital-status" class="form-control">
+                                                            <option value="1">Single</option>
+                                                            <option value="2">Married</option>
+                                                            <option value="3">Divorced</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="blood-group">Blood Group
+                                                    </label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <input type="text" id="blood-group" class="form-control col-md-7 col-xs-12">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">Gender
+                                                    </label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <select id="rateChart" name="marital-status" class="form-control">
+                                                            <option value="1">Male</option>
+                                                            <option value="2">Female</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="f/s-name">Father/Spouse Name
+                                                    </label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <input type="text" id="f/s-name" class="form-control col-md-7 col-xs-12">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">NID</label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <input type="text" class="form-control" data-inputmask="'mask' : '********************'">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">Religion
+                                                    </label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <select id="religion" name="religion" class="form-control">
+                                                            <option value="I">Islam</option>
+                                                            <option value="C">Christianity</option>
+                                                            <option value="H">Hinduism</option>
+                                                            <option value="B">Buddhism</option>
+                                                            <option value="O">Others</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="divider-dashed"></div>
+                                                <div class="title_left">
+                                                    <h3>Bank Information</h3>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="bank-name" class="control-label col-md-3 col-sm-3 col-xs-12">Bank Name</label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <input id="bank-name" class="form-control col-md-7 col-xs-12" type="text" name="bank-name">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="acc-name" class="control-label col-md-3 col-sm-3 col-xs-12">Account Name</label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <input id="acc-name" class="form-control col-md-7 col-xs-12" type="text" name="acc-name">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="acc-num" class="control-label col-md-3 col-sm-3 col-xs-12">Account Number</label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <input id="acc-num" class="form-control col-md-7 col-xs-12" type="text" name="acc-num">
+                                                    </div>
+                                                </div>
+                                                <div class="divider-dashed"></div>
+                                                <div class="title_left">
+                                                    <h3>Emergency Contact Information</h3>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="e-contact" class="control-label col-md-3 col-sm-3 col-xs-12">Contact Person Name</label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <input id="e-contact" class="form-control col-md-7 col-xs-12" type="text" name="e-contact">
+                                                    </div>
+                                                </div>
+                                                <div class=" item form-group">
+                                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">Contact Number
+                                                        <span class="required">*</span>
+                                                    </label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <input type="text" class="form-control" required="required" data-inputmask="'mask' : '(999) 999-99999'">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="relation" class="control-label col-md-3 col-sm-3 col-xs-12">Relationship</label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <input id="relation" class="form-control col-md-7 col-xs-12" type="text" name="relation">
+                                                    </div>
+                                                </div>
+                                                <div class="divider-dashed"></div>
+                                                <div class="title_left">
+                                                    <h3>Points Assigned</h3>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">Assign Points
+                                                        <br>
+                                                        <small class="text-navy" style="color: tomato;">Check ONLY the Points you want to assign to the employee.</small>
+                                                    </label>
+
+                                                    <div class="col-md-9 col-sm-9 col-xs-12">
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox" class="flat"> Point A
+                                                            </label>
+                                                        </div>
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox" class="flat"> Point B
+                                                            </label>
+                                                        </div>
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox" class="flat"> Point C
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="x_content">
+                                        <ul class="m-btns  col-lg-7 col-md-7 col-sm-7 col-xs-7">
+                                            <li>
+                                                <button type="button" class="btn btn-primary back-btn-emp">Back</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="btn btn-success">Update</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <script>
+                document.querySelector(".employee-edit").addEventListener("click", function () {
+                    document.querySelector(".editEmployee").style.display = "block";
+                    document.querySelector(".employee-list-table").style.display = "none";
+                });
+
+                document.querySelector(".back-btn-emp").addEventListener("click", function () {
+                    document.querySelector(".employee-list-table").style.display = "block";
+                    document.querySelector(".editEmployee").style.display = "none";
+                });
+            </script>
+            <!-- /page content -->
+
+            <!-- footer content -->
+            <footer>
+                <div class="pull-right">
+                    PaperFly - Copyright
+                    <a href="https://Intelligent Machines.com">Intelligent Machines</a>
+                </div>
+                <div class="clearfix"></div>
+            </footer>
+            <!-- /footer content -->
+        </div>
+    </div>
+
+    <!-- Popup msg script-->
+    <script>
+        function dltInfo() {
+            var x = document.getElementById("dltMsg");
+            var y = document.getElementById("cnclMsg");
+            x.style.display = "block";
+            y.style.display = "none";
+        }
+        function cnclInfo() {
+            var x = document.getElementById("dltMsg");
+            var y = document.getElementById("cnclMsg");
+            x.style.display = "none";
+            y.style.display = "block";
+        }
+    </script>
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- iCheck -->
+    <script src="../vendors/iCheck/icheck.min.js"></script>
+    <!-- Datatables -->
+    <script src="../vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="../vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <script src="../vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="../vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+    <script src="../vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
+    <script src="../vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="../vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="../vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+    <script src="../vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+    <script src="../vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+    <script src="../vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
+    <script src="../vendors/jszip/dist/jszip.min.js"></script>
+    <script src="../vendors/pdfmake/build/pdfmake.min.js"></script>
+    <script src="../vendors/pdfmake/build/vfs_fonts.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.js"></script>
+    <!-- Dropzone.js -->
+    <script src="../vendors/dropzone/dist/min/dropzone.min.js"></script>
+
+</body>
+
+</html>
